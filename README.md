@@ -1,6 +1,11 @@
 # Relay-Cart-Website
-Contributors: Concepcion, Freanne Lei & delos Santos, Rons Marie
+
+Contributors: 
+Concepcion, Freanne Lei
+delos Santos, Rons Marie
+
 Date: October 14, 2022
+
 Figma Link: https://www.figma.com/file/gVsu9ywAMt1X8vrxohPVeS/RelayCart?node-id=0%3A1
 
 ==About RelayCart==
