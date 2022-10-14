@@ -1,8 +1,6 @@
 # Relay-Cart-Website
 
-Contributors: 
-Concepcion, Freanne Lei
-delos Santos, Rons Marie
+Contributors: Concepcion, Freanne Lei & delos Santos, Rons Marie
 
 Date: October 14, 2022
 
