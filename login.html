@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    
+    <title>RelayCart Sign in</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class = "max-width">
+            <div class ="logo"> <a href="#"> <img src ="img/relaycartlogo.png"></div> </a> 
+            <ul class ="menu">
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <!-- <li><a href="#"><button class ="signupbtn">Sign Up</button></a></li> -->
+            </ul>
+            <div class ="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="signin-section">
+        <div class="signin-container"> 
+            <div class="content">
+                <h1> Shopper Sign in </h1>
+                <p>No login? Want to shop? <a class="gold" href="signup.html"> Sign-up </a> to be a shopper today.</p>
+                    <h3>Enter your phone number </h3>
+
+                        <form>
+                            <div class="phone">
+                            <div class ="country-code">
+                                <select id="country" onchange="country-code()">
+                                    <option value="us">&#x1F1FA;&#x1F1F8; +1 </option>
+                                    <option value="ca">&#x1F1E8;&#x1F1E6; +1</option>
+                                    <option value="cn">&#x1F1E8;&#x1F1F3; +86</option>
+                                </select>
+                            </div>
+                                <input type="text" class="form-control" placeholder="Phone Number" style="width: 300px;"/>
+                            <script>
+                                function country_code() {
+                                    var val = document.getElementById("country").value;
+
+                                    if (val === "us") {
+                                        document.getElementById("output").value = "+1";
+                                    }
+                                    else if (val === "ca"){
+                                        document.getElementById("output").value = "+1";
+                                    }
+                                    else if (val === "cn"){
+                                        document.getElementById("output").value = "+86";
+                                    }
+                            }
+                            </script>
+                            </div>
+                              <img class="captcha" src="img/newCaptchaAnchor.gif" alt="captcha">
+                              <div class="cancel-verify">
+                                <p> <a href="#"> Cancel </a></p>
+                                <button type="button" class="button">Verify</button>
+                              </div>
+                <p>By tapping Verify, an SMS may be sent. Message & data 
+                    rates may apply.</p>          
+                            </form>
+            </div>
+    </div> 
+    </section>
+    
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-logo">
+                    <a href="#"> <img class="img-logo" src="img/relaycartlogo.png" alt="RelayCart Logo"> </a>
+                    <p> Privacy Policy
+                        © 2020 Maplebear Inc. All rights reserved.</p>
+
+                </div>
+                <div class="footer-col">
+                    <h4>RelayCart</h4>
+                    <ul>
+                        <li><a href="#"> Careers </a></li>
+                        <li><a href="#"> Latest News </a></li>
+                        <li><a href="#"> Contact Us </a></li>
+                        <li><a href="help.html"> Help Center </a></li>
+                        <li><a href="faq.html"> FAQs </a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Shopper</h4>
+                    <ul>
+                        <li><a href="signup-full.html"> Full-service Shopper </a></li>
+                        <li><a href="signup-instore.html"> In-Store Shopper </a></li>
+                        <li><a href="#"> Earnings </a></li>
+                        <li><a href="#"> Shopper Support</a></li>
+                        <li><a href="#"> Jobs</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Top Cities</h4>
+                    <ul>
+                        <li><a href="#"> Philadelphia, PA </a></li>
+                        <li><a href="#"> Washington, DC </a></li>
+                        <li><a href="#"> San Diego, CA </a></li>
+                        <li><a href="#"> Denver, CO </a></li>
+                        <li><a href="#"> Buffalo, NY </a></li>
+                        <li><a href="#"> Sacramento, CA </a></li>
+                        <li><a href="#"> Indianapolis, IN </a></li>
+                        <li><a href="#"> St. Louis, MO </a></li>
+                        <li><a href="#"> Rochester, NY </a></li>
+                        <li><a href="#"> Columbus, OH </a></li>
+                        <li><a href="#"> View All Cities </a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Get the App</h4>
+                    <ul>
+                        <li><a href="download.html"> iOS Shopper App </a></li>
+                        <li><a href="download.html"> Android Shopper App </a></li>
+                        <li><a href="#"> iOS Delivery App </a></li>
+                        <li><a href="#"> Android Delivery App </a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>RelayCart FAQs</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    background: white;
+    color: black;
+}
+
+section{
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 64px;
+    
+    margin-top: 80px;
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-size: 1.8rem;
+}
+
+mark.gold {
+    color:#EF9E11;
+    background: none;
+    font-size: 40px;
+    font-family: 'Lato',sans-serif;
+}
+
+mark.blue{
+    color:#164E62;
+    background: none;
+    font-size: 40px;
+    font-family: 'Lato',sans-serif;
+}
+
+.answer{
+    margin-top: 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.column-1 {
+  float: left;
+  width: 6%;
+  padding-left: 10px;
+  border-left: solid #EF9E11;
+}
+
+.column-2 {
+  float: left;
+  width: 94%;
+  padding: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+.faq.active .answer{
+    max-height: 1000px;
+    animation: fade 2s ease-in-out;
+}
+
+.faq.active svg{
+    fill: #EF9E11;
+    transform: rotate(180deg);
+    
+}
+
+svg{
+    transition: transform .5s ease-in;
+    fill: #164E62;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media screen and (max-width: 947px){
+.question h3{
+  font-size: 1.3rem;
+}
+}
+
+@media screen and (max-width: 690px){
+.question h3{
+  font-size: 1rem;
+}
+
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.column-2 {
+  width: 94%;
+  padding-left: 20px;
+}
+mark.gold {
+    font-size: 30px;
+}
+
+mark.blue{
+    font-size: 30px;
+    padding-right: 10px;
+}
+}
+
+@media screen and (max-width: 500px){
+.question h3{
+  font-size: 1rem;
+}
+
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.column-2 {
+  width: 94%;
+  padding-left: 20px;
+}
+mark.gold {
+    font-size: 30px;
+}
+
+mark.blue{
+    font-size: 30px;
+    padding-right: 10px;
+}
+}
+
+
+
+
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class = "max-width">
+            <div class ="logo"> <a href="#"> <img src ="img/relaycartlogo.png"></div> </a> 
+            <ul class ="menu">
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <!-- <li><a href="#"><button class ="signupbtn">Sign Up</button></a></li> -->
+            </ul>
+            <div class ="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <h2 class="title">FAQS</h2>
+
+        <div class="faq"> 
+            <div class="question">
+                <h3><mark class="blue" style="border-left: solid #164E62; padding-left: 5px;">Q</mark> What is RelayCart?</h3>
+
+                <svg width="25" height="25" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <div class="column-1">
+                    <p>
+                        <mark class="gold">A</mark> 
+                    </p>
+                </div>
+                <div class="column-2">
+                    <p>
+                        RelayCart is an app that connects you to customers who need groceries. You use the app to sign on, find orders, then shop and deliver those items to your customers.
+                        When you get paid, you can cash out instantly and you can earn even more with tips for great service.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="faq"> 
+            <div class="question">
+                <h3><mark class="blue" style="border-left: solid #164E62; padding-left: 5px;">Q</mark> How do I sign up to become an shopper?</h3>
+
+                <svg width="25" height="25" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <div class="column-1">
+                    <p>
+                        <mark class="gold">A</mark> 
+                    </p>
+                </div>
+                <div class="column-2">
+                    <p>
+                        Just create an account at shoppers.RelayCart.com. After that, just download the Shopper app from the Apple App Store or the Google Play Store to complete the sign up
+                        process and get your background check started. When your background check has cleared and you’re approved to shop, you can sign on to shop and make money on 
+                        your own schedule.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="faq"> 
+            <div class="question">
+                <h3><mark class="blue" style="border-left: solid #164E62; padding-left: 5px;">Q</mark> How do I get paid?</h3>
+
+                <svg width="25" height="25" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <div class="column-1">
+                    <p>
+                        <mark class="gold">A</mark> 
+                    </p>
+                </div>
+                <div class="column-2">
+                    <p>How much an RelayCart shopper earns depends on their role type and other factors.</p>
+                    <p><b> Full-service shopper in the U.S. </b><br> Shoppers get paid per batch that they complete. RelayCart provides estimates for your earnings on every order as well as total earnings for the week. The amount you earn per batch of orders depends on the number of items, type of items, driving distance, and effort involved in shopping and delivering. You keep 100% of customer tips. You also get opportunities to earn extra through promotions RelayCart runs. </p>
+                    <p> As independent contractors, full-service shoppers have the flexibility to work as little or as often as they want. This means that total earnings potential depends on the individual.</p> 
+                    <p><b>In-store shopper in the U.S.</b> <br>
+                        In-store shoppers are RelayCart employees who earn an hourly wage, detailed in the initial offer letter. In-store shoppers are scheduled for shifts based on personal availability, up to 29 hours each week.
+                    </p>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="faq"> 
+            <div class="question">
+                <h3><mark class="blue" style="border-left: solid #164E62; padding-left: 5px;">Q</mark> What is shopping like?</h3>
+
+                <svg width="25" height="25" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <div class="column-1">
+                    <p>
+                        <mark class="gold">A</mark> 
+                    </p>
+                </div>
+                <div class="column-2">
+                    <p>
+                        Hear from real shoppers about what its like to shop with RelayCart in this video.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="faq"> 
+            <div class="question">
+                <h3><mark class="blue" style="border-left: solid #164E62; padding-left: 5px;">Q</mark> What documents do I need to sign up?</h3>
+
+                <svg width="25" height="25" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <div class="column-1">
+                    <p>
+                        <mark class="gold">A</mark> 
+                    </p>
+                </div>
+                <div class="column-2">
+                    <p>
+                        The first thing you’ll need to have on-hand is your contact information (the details on your driver’s license should cover this step). You will also need to have your social security number readily available. The sign up process will then ask you to set up direct deposit so you can get paid! You’ll need your banking information to complete this step.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="faq"> 
+            <div class="question">
+                <h3><mark class="blue" style="border-left: solid #164E62; padding-left: 5px;">Q</mark> Do I pay for groceries myself?</h3>
+
+                <svg width="25" height="25" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <div class="column-1">
+                    <p>
+                        <mark class="gold">A</mark> 
+                    </p>
+                </div>
+                <div class="column-2">
+                    <p>
+                        Not at all. As an RelayCart shopper, you’ll get a payment card from RelayCart and use it at the checkout register at every store you shop. Getting a payment card is simple. New shoppers usually receive their payment card in the mail 5 to 7 business days after completing the sign up process.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-logo">
+                    <a href="#"> <img class="img-logo" src="img/relaycartlogo.png" alt="RelayCart Logo"> </a>
+                    <p> Privacy Policy
+                        © 2020 Maplebear Inc. All rights reserved.</p>
+
+                </div>
+                <div class="footer-col">
+                    <h4>RelayCart</h4>
+                    <ul>
+                        <li><a href="#"> Careers </a></li>
+                        <li><a href="#"> Latest News </a></li>
+                        <li><a href="#"> Contact Us </a></li>
+                        <li><a href="help.html"> Help Center </a></li>
+                        <li><a href="faq.html"> FAQs </a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Shopper</h4>
+                    <ul>
+                        <li><a href="signup-full.html"> Full-service Shopper </a></li>
+                        <li><a href="signup-instore.html"> In-Store Shopper </a></li>
+                        <li><a href="#"> Earnings </a></li>
+                        <li><a href="#"> Shopper Support</a></li>
+                        <li><a href="#"> Jobs</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Top Cities</h4>
+                    <ul>
+                        <li><a href="#"> Philadelphia, PA </a></li>
+                        <li><a href="#"> Washington, DC </a></li>
+                        <li><a href="#"> San Diego, CA </a></li>
+                        <li><a href="#"> Denver, CO </a></li>
+                        <li><a href="#"> Buffalo, NY </a></li>
+                        <li><a href="#"> Sacramento, CA </a></li>
+                        <li><a href="#"> Indianapolis, IN </a></li>
+                        <li><a href="#"> St. Louis, MO </a></li>
+                        <li><a href="#"> Rochester, NY </a></li>
+                        <li><a href="#"> Columbus, OH </a></li>
+                        <li><a href="#"> View All Cities </a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Get the App</h4>
+                    <ul>
+                        <li><a href="download.html"> iOS Shopper App </a></li>
+                        <li><a href="download.html"> Android Shopper App </a></li>
+                        <li><a href="#"> iOS Delivery App </a></li>
+                        <li><a href="#"> Android Delivery App </a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+      </div>
+<script src="./app.js"></script>
+</body>
+</html>
